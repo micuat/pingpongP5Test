@@ -30,5 +30,6 @@ void main( void )
 	float y = col.g - 0.5;
 
 	// Sample the texture from the target position
+	//gl_FragColor	= texture2D( tex, uv + vec2( x, y ) * 0.02 );
 	gl_FragColor	= mix(col, texture2D( tex, uv + vec2( x, y ) * 0.02 ), 0.15);
 }
